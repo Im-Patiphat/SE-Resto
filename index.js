@@ -17,3 +17,17 @@ close_icon.onclick = () =>{
     let search_form = document.querySelector("#search-form");
     search_form.classList.remove("active");
 }
+//swiper function
+var swiper = new Swiper(".home-slider", {
+    spaceBetween: 30,
+    centerdSlides: true,
+    autoplay:{
+        delay :3000,
+        disableOnInteracion: false,
+    },
+    pagination: {
+        el : ".swiper-pagination",
+        clickable: true,
+    },
+    loop: true,
+});
